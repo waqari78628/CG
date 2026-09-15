@@ -30,10 +30,10 @@ jobs:
       - name: Generate Android Project
         run: npx expo prebuild --platform android --no-install
 
-      - name: Fix Kotlin Version & Compatibility
+      - name: Force Kotlin 1.9.25
         run: |
+          grep -rl "1.9.24" android/ | xargs sed -i 's/1.9.24/1.9.25/g' || true
           echo "android.kotlinVersion=1.9.25" >> android/gradle.properties
-          echo "kotlin.suppressKotlinVersionCompatibilityCheck=true" >> android/gradle.properties
 
       - name: Build Debug APK
         run: |
