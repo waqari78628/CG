@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "Cable Gland Expert",
+    "slug": "cable-gland-expert",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0f172a",
+    "android": {
+      "package": "com.waqari.cableglandexpert",
+      "adaptiveIcon": {
+        "backgroundColor": "#0f172a"
+      }
+    }
+  }
+}
